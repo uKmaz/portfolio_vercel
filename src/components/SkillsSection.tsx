@@ -1,5 +1,3 @@
-import React from "react";
-
 const SkillsSection = () => {
   const programmingLanguages = [
     { name: "C#", level: 90 },
