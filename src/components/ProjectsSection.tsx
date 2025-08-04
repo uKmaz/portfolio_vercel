@@ -7,7 +7,7 @@ const ProjectsSection = () => {
     {
       title: "TÜBİTAK Project",
       description: "Conducted a research project combining psychology and technology, utilizing programming to model behavior and analyze patterns. Showcased analytical and problem-solving skills.",
-      technologies: ["Python", "Research", "Data Analysis", "Psychology"],
+      technologies: ["C#", "Unity", "Research", "Data Analysis", "Psychology"],
       links: [
         { 
           label: "GitHub", 
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
     {
       title: "UniHub – A Social Platform for University Communities",
       description: "Designed and developed a mobile app tailored for university clubs and students to connect, organize events, and share content. Built using modern tools and frameworks with a focus on user experience, performance, and scalability.",
-      technologies: ["React Native", "Full-Stack", "UI/UX", "Mobile Development"],
+      technologies: ["React Native", "Full-Stack", "UI/UX", "Mobile Development", "PostgreSQL"],
       links: [],
       featured: true
     }
