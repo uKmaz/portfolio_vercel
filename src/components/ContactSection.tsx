@@ -17,7 +17,7 @@ const ContactSection = () => {
     },
     {
       name: "Resume",
-      url: "http://xn--umaz-0oa.com/resume.pdf",
+      url: "http://xn--umaz-0oa.com/resume",
       icon: FileText,
       description: "Download my full resume"
     }
