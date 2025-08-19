@@ -62,7 +62,7 @@ const HeroSection = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="http://xn--umaz-0oa.com/resume.pdf" 
+              href="http://xn--umaz-0oa.com/resume"
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 transition-all duration-300 hover:scale-110 hover:bg-card/80 hover:shadow-[var(--hover-glow)]"

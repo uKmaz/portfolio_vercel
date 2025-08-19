@@ -3,6 +3,8 @@ import { useEffect } from "react";
 const Resume = () => {
     useEffect(() => {
         document.title = "Emre Uçmaz - Resume";
+
+        // favicon'u değiştirme
         const link =
             document.querySelector("link[rel~='icon']") || document.createElement("link");
         link.setAttribute("rel", "icon");
