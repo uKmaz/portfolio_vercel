@@ -14,7 +14,7 @@ const Resume = () => {
     }, []);
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-background">
             <h1 className="text-3xl font-bold mb-6">My Resume</h1>
             <p className="text-lg text-gray-600 mb-4">
                 You can view or download my CV below:
