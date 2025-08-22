@@ -1,65 +1,66 @@
 UniHub Gizlilik Politikası
-Son Güncelleme Tarihi: [20 Ağustos 2025]
+
+Son Güncelleme Tarihi: 20 Ağustos 2025
 
 UniHub'a hoş geldiniz. Bu Gizlilik Politikası, UniHub mobil uygulamasını ("Hizmet") kullandığınızda kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı, paylaştığımızı ve koruduğumuzu açıklamaktadır.
 
 Hizmetimizi kullanarak, bu politikada açıklanan veri toplama ve kullanma uygulamalarını kabul etmiş olursunuz.
 
 1. Topladığımız Bilgiler
-Hizmetimizi sunmak ve iyileştirmek için çeşitli türde bilgiler topluyoruz.
 
-a) Sizin Sağladığınız Bilgiler
+Hizmetimiz yalnızca edu.tr uzantılı e-posta adresleri ile kayıt olan kullanıcılar için kullanılabilir.
 
-Hesap Bilgileri: UniHub'a kaydolduğunuzda adınız, soyadınız, e-posta adresiniz, öğrenci numaranız ve şifreniz gibi bilgileri toplarız.
+Hesap Bilgileri: Ad, soyad, edu.tr uzantılı e-posta adresi, öğrenci numarası ve şifre.
 
-Profil Bilgileri: Profilinize eklediğiniz profil fotoğrafı gibi ek bilgileri toplarız.
+Profil Bilgileri: Profil fotoğrafı.
 
-Kullanıcı İçerikleri: Hizmetimiz aracılığıyla oluşturduğunuz gönderiler (metin ve fotoğraflar), etkinlikler ve diğer içerikler.
+Kullanıcı İçerikleri: Gönderiler, etkinlikler, beğeniler.
 
-
-b) Otomatik Olarak Toplanan Bilgiler
-
-Kullanım Verileri: Hangi kulüplere üye olduğunuz, hangi etkinliklere katıldığınız veya hangi gönderileri beğendiğiniz gibi uygulama içindeki etkileşimlerinize dair bilgiler.
-
-Cihaz Bilgileri: Push bildirimleri gönderebilmek için cihazınızla ilişkili anonim bir token bilgisi.
+Cihaz Bilgileri: Bildirim gönderebilmek için cihaz token bilgisi.
 
 2. Bilgilerinizi Nasıl Kullanıyoruz?
-Topladığımız bilgileri aşağıdaki amaçlar için kullanırız:
 
-Hizmeti Sunmak ve Sürdürmek: Hesabınızı yönetmek, kulüplere, etkinliklere ve gönderilere erişiminizi sağlamak.
+Hesabınızı yönetmek, kulüplere ve etkinliklere erişim sağlamak.
 
-İletişim Kurmak: Üye olduğunuz kulüplerden gönderi veya etkinlik bildirimleri gibi anlık bildirimler göndermek.
+Bildirim göndermek.
 
-Kişiselleştirme: Uygulama içi deneyiminizi ilgi alanlarınıza göre şekillendirmek.
+Uygulama deneyimini kişiselleştirmek.
 
-Güvenliği Sağlamak: Hizmetimizin güvenliğini ve bütünlüğünü korumak.
+Güvenliği sağlamak.
 
 3. Bilgilerinizi Nasıl Paylaşıyoruz?
-Kişisel bilgilerinizi aşağıdaki durumlar dışında üçüncü taraflarla paylaşmayız:
 
-Diğer Kullanıcılarla: Profil bilgileriniz, gönderileriniz ve etkinlik katılımlarınız gibi bilgiler, ilgili kulüplerin diğer üyeleri tarafından görülebilir.
+Diğer Kullanıcılarla: Profiliniz, gönderileriniz ve etkinlikleriniz kulüp üyeleriyle paylaşılır.
 
-Hizmet Sağlayıcıları: Uygulamanın altyapısını sağlamak için üçüncü taraf hizmetler kullanıyoruz. Özellikle, kimlik doğrulama, veri depolama (veritabanı ve fotoğraflar) ve anlık bildirim hizmetleri için Google Firebase kullanmaktayız. Firebase'in verilerinizi nasıl işlediği hakkında daha fazla bilgi için Firebase Gizlilik Politikası'nı inceleyebilirsiniz.
+Hizmet Sağlayıcılarla: Firebase altyapısı (kimlik doğrulama, veri depolama, bildirimler).
 
-Yasal Yükümlülükler: Yasal bir zorunluluk veya resmi bir talep olması durumunda bilgilerinizi yetkili makamlarla paylaşabiliriz.
+Yasal Yükümlülükler: Resmî talep durumunda paylaşılabilir.
 
 4. Veri Güvenliği ve Saklama
-Verilerinizin güvenliğini sağlamak için endüstri standardı teknik ve idari güvenlik önlemleri alıyoruz. Bilgileriniz, Google Firebase tarafından sağlanan güvenli sunucularda saklanmaktadır. Ancak, internet üzerinden hiçbir aktarım yönteminin %100 güvenli olmadığını unutmamanız önemlidir.
 
-5. Haklarınız ve Seçimleriniz
-Bilgilere Erişim ve Güncelleme: Uygulama içindeki profil ve ayarlar ekranlarından kişisel bilgilerinize erişebilir ve bunları güncelleyebilirsiniz.
+Tüm veriler Firebase’in güvenli altyapısında saklanmaktadır.
 
-Hesabın Silinmesi: Ayarlar menüsünden hesabınızı kalıcı olarak silebilirsiniz. Bu işlem, hesabınızı ve ilgili tüm verilerinizi sistemimizden siler.
+Şifreler hashlenmiş (geri döndürülemez) olarak saklanır.
 
-Bildirimleri Kontrol Etme: Cihazınızın ayarlarından veya uygulama içindeki kulüp detay ayarlarından anlık bildirim izinlerinizi yönetebilirsiniz.
+Hesabınızı sildiğiniz anda tüm verileriniz kalıcı ve geri döndürülemez şekilde silinir.
+
+5. Haklarınız
+
+Bilgilerinize erişme ve güncelleme.
+
+Hesabı ve tüm verileri kalıcı olarak silme.
+
+Bildirim izinlerini yönetme.
 
 6. Çocukların Gizliliği
-Hizmetimiz 13 yaşın altındaki kişilere yönelik değildir. Bilerek 13 yaşın altındaki çocuklardan kişisel bilgi toplamıyoruz.
 
-7. Bu Gizlilik Politikasındaki Değişiklikler
-Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Herhangi bir değişiklik yaptığımızda, yeni politikayı bu sayfada yayınlayacak ve "Son Güncelleme Tarihi"ni değiştireceğiz.
+UniHub 13 yaş altı kişilere yönelik değildir.
+
+7. Değişiklikler
+
+Politika güncellenebilir, “Son Güncelleme Tarihi” revize edilir.
 
 8. İletişim
-Bu Gizlilik Politikası ile ilgili herhangi bir sorunuz veya endişeniz varsa, lütfen bizimle iletişime geçin:
 
-E-posta: [İletişim E-posta Adresiniz]
+Her türlü soru ve talep için:
+unihubtrdeu@gmail.com
