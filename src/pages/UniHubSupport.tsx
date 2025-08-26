@@ -13,7 +13,7 @@ const UniHubSupport = () => {
       <ul>
         <li>
           <strong>E-posta:</strong>{" "}
-          <a href="unihubtrdeu@gmail.com">Destek</a>
+          <a>unihubtrdeu@gmail.com</a>
         </li>
       </ul>
 
