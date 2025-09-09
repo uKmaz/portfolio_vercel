@@ -39,7 +39,31 @@ const ProjectsSection = () => {
       title: "UniHub – A Social Platform for University Communities",
       description: "Designed and developed a mobile app tailored for university clubs and students to connect, organize events, and share content. Built using modern tools and frameworks with a focus on user experience, performance, and scalability.",
       technologies: ["React Native", "Full-Stack", "UI/UX", "Mobile Development", "PostgreSQL"],
-      links: [],
+      links: [
+        {
+          label: "Website Link (SOON)", 
+          url: "", 
+          icon: ExternalLink 
+        }
+      ],
+      featured: true
+    },
+    {
+      title: "I Hate You",
+      description: "Developed in 30 hours with a teammate, this Unity project is a rogue-lite local co-op game featuring fun mechanics and random events. Showcases rapid prototyping, teamwork, and creative design under tight time limits.",
+      technologies: ["Unity2D", "C#", "Game Development", "Local Co-op", "Rogue-lite"],
+      links: [
+        { 
+          label: "Download", 
+          url: "https://drive.google.com/drive/folders/1-AbDAYrlNJ6I_CttLwyift7QJFRSUWSZ?usp=sharing", 
+          icon: ExternalLink 
+        },
+        { 
+          label: "GitHub", 
+          url: "https://github.com/uKmaz/Bambu-Izotop-GameJam", 
+          icon: Github 
+        }
+      ],
       featured: true
     }
   ];
@@ -48,7 +72,7 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent leading-tight">
             Featured Projects
           </h2>
           
