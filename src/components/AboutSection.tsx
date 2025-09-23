@@ -10,15 +10,10 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate Computer Engineering student with a drive for creating meaningful digital experiences. 
-                Currently in my third year at Dokuz Eylül University, I specialize in game development and mobile applications.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                My approach focuses on clean system architecture, intuitive user interactions, and game mechanics that feel natural and engaging. 
-                Whether it's a social platform or a Unity-based puzzle game, I believe in shipping products that users genuinely want to engage with.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Always experimenting with new technologies and methodologies, I'm constantly learning and pushing the boundaries of what's possible in software development.
+                I’m a third-year Computer Engineering student at Dokuz Eylül University.
+                 I enjoy working on game development and mobile apps, focusing on clear system design,
+                  smooth interactions, and mechanics that feel natural. I like trying out new tools and ideas,
+                   and I’m always looking for ways to make projects more fun and useful.
               </p>
             </div>
             

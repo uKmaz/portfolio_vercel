@@ -13,11 +13,6 @@ const ProjectsSection = () => {
           label: "GitHub", 
           url: "https://github.com/uKmaz/TUBITAK-Psychology", 
           icon: Github 
-        },
-        { 
-          label: "Privacy Policy", 
-          url: "http://xn--umaz-0oa.com/privacy-policy", 
-          icon: Shield 
         }
       ],
       featured: true
@@ -41,8 +36,8 @@ const ProjectsSection = () => {
       technologies: ["React Native", "Full-Stack", "UI/UX", "Mobile Development", "PostgreSQL"],
       links: [
         {
-          label: "Website Link (SOON)", 
-          url: "", 
+          label: "Unihub Website", 
+          url: "https://www.unihub.tr/", 
           icon: ExternalLink 
         }
       ],
