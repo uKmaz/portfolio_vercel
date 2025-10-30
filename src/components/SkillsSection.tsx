@@ -1,12 +1,13 @@
 const SkillsSection = () => {
   const programmingLanguages = [
+    { name: "Java", level: 100 },
     { name: "C#", level: 90 },
-    { name: "Java", level: 90 },
-    { name: "Python", level: 70 }
+    { name: "Javascript", level: 70 },
+    { name: "Python", level: 70 },
   ];
 
   const technologies = [
-    "Git", "Unity", "Spring Boot", "React Native", "Render", "Firebase"
+    "Git", "Unity", "Spring Boot", "React Native", "Render", "Expo"
   ];
 
   return (
