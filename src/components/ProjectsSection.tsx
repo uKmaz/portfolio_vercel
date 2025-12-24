@@ -5,6 +5,32 @@ import { ExternalLink, Github, Shield } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "UniHub – A Social Platform for University Communities",
+      description: "Designed and developed a mobile app tailored for university clubs and students to connect, organize events, and share content. Built using modern tools and frameworks with a focus on user experience, performance, and scalability.",
+      technologies: ["React Native", "Full-Stack", "UI/UX", "Mobile Development", "PostgreSQL"],
+      links: [
+        {
+          label: "Unihub Website", 
+          url: "https://www.unihub.tr/", 
+          icon: ExternalLink 
+        }
+      ],
+      featured: true
+    },
+    {
+      title: "Case #0 - Myself",
+      description: "Developed a 2D Pixel Story-Based game in 48 hours in Unity. Worked on Level Design, Game Design and Development, created my own Workflow to design the game infinitely. Due to time limit it is short.",
+      technologies: ["Unity", "C#", "2D Pixel Art", "Game Design", "Level Design"],
+      links: [
+        { 
+          label: "Play Game", 
+          url: "https://www.fiuby.com/games/case-0-myself", 
+          icon: ExternalLink 
+        }
+      ],
+      featured: true
+    },
+    {
       title: "TÜBİTAK Project",
       description: "Conducted a research project combining psychology and technology, utilizing programming to model behavior and analyze patterns. Showcased analytical and problem-solving skills.",
       technologies: ["C#", "Unity", "Research", "Data Analysis", "Psychology"],
@@ -25,19 +51,6 @@ const ProjectsSection = () => {
         { 
           label: "Play Game", 
           url: "https://ucmazj.itch.io/thiefy-thiefson-jamination-7", 
-          icon: ExternalLink 
-        }
-      ],
-      featured: true
-    },
-    {
-      title: "UniHub – A Social Platform for University Communities",
-      description: "Designed and developed a mobile app tailored for university clubs and students to connect, organize events, and share content. Built using modern tools and frameworks with a focus on user experience, performance, and scalability.",
-      technologies: ["React Native", "Full-Stack", "UI/UX", "Mobile Development", "PostgreSQL"],
-      links: [
-        {
-          label: "Unihub Website", 
-          url: "https://www.unihub.tr/", 
           icon: ExternalLink 
         }
       ],
