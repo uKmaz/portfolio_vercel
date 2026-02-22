@@ -6,73 +6,121 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "UniHub – A Social Platform for University Communities",
-      description: "Designed and developed a mobile app tailored for university clubs and students to connect, organize events, and share content. Built using modern tools and frameworks with a focus on user experience, performance, and scalability.",
-      technologies: ["React Native", "Full-Stack", "UI/UX", "Mobile Development", "PostgreSQL"],
+      description:
+        "Architected and launched a scalable full-stack social platform serving 1000+ downloads across 5+ universities and 50+ active communities. Designed backend infrastructure, relational database schemas, and cross-platform mobile applications with a focus on performance, real-time interaction, and production-grade deployment.",
+      technologies: [
+        "Spring Boot",
+        "React Native",
+        "PostgreSQL",
+        "Firebase Auth",
+        "CI/CD",
+        "Nginx"
+      ],
       links: [
         {
-          label: "Unihub Website", 
-          url: "https://www.unihub.tr/", 
-          icon: ExternalLink 
+          label: "Unihub Website",
+          url: "https://www.unihub.tr/",
+          icon: ExternalLink
         }
       ],
       featured: true
     },
     {
-      title: "Case #0 - Myself",
-      description: "Developed a 2D Pixel Story-Based game in 48 hours in Unity. Worked on Level Design, Game Design and Development, created my own Workflow to design the game infinitely. Due to time limit it is short.",
-      technologies: ["Unity", "C#", "2D Pixel Art", "Game Design", "Level Design"],
+      title: "Homeie – Shared Living Management Platform (In Development)",
+      description:
+        "Designing and developing a scalable home management system for shared living environments. Leading full-stack architecture, implementing chore automation, expense tracking, and payment balancing logic to improve transparency and coordination among housemates.",
+      technologies: [
+        "Spring Boot",
+        "React Native",
+        "PostgreSQL",
+        "Firebase",
+        "System Architecture"
+      ],
+      links: [],
+      featured: true
+    },
+    {
+      title: "TÜBİTAK Research Project",
+      description:
+        "Developed a research-oriented software system integrating psychology and behavioral modeling. Implemented structured data collection and behavioral pattern analysis tools in Unity to support academic research outcomes.",
+      technologies: [
+        "Unity",
+        "C#",
+        "Firebase",
+        "Data Modeling",
+        "Behavior Analysis"
+      ],
       links: [
-        { 
-          label: "Play Game", 
-          url: "https://www.fiuby.com/games/case-0-myself", 
-          icon: ExternalLink 
+        {
+          label: "GitHub",
+          url: "https://github.com/uKmaz/TUBITAK-Psychology",
+          icon: Github
         }
       ],
       featured: true
     },
     {
-      title: "TÜBİTAK Project",
-      description: "Conducted a research project combining psychology and technology, utilizing programming to model behavior and analyze patterns. Showcased analytical and problem-solving skills.",
-      technologies: ["C#", "Unity", "Research", "Data Analysis", "Psychology"],
+      title: "Case #0 – Myself",
+      description:
+        "Built a 2D pixel-art story-driven game in 48 hours using Unity. Designed scalable level systems, core gameplay mechanics, and a reusable workflow for rapid content creation under strict time constraints.",
+      technologies: [
+        "Unity",
+        "C#",
+        "2D Game Systems",
+        "Game Architecture"
+      ],
       links: [
-        { 
-          label: "GitHub", 
-          url: "https://github.com/uKmaz/TUBITAK-Psychology", 
-          icon: Github 
+        {
+          label: "Play Game",
+          url: "https://www.fiuby.com/games/case-0-myself",
+          icon: ExternalLink
         }
       ],
-      featured: true
+      featured: false
+    },
+    {
+      title: "I Hate You – Rogue-lite Co-op Game",
+      description:
+        "Co-developed a rogue-lite local co-op game in 30 hours, implementing procedural events, player interaction systems, and scalable gameplay mechanics. Demonstrates rapid prototyping and collaborative system design.",
+      technologies: [
+        "Unity",
+        "C#",
+        "Game Systems",
+        "Local Co-op",
+        "Rapid Prototyping"
+      ],
+      links: [
+        {
+          label: "Download",
+          url: "https://drive.google.com/drive/folders/1-AbDAYrlNJ6I_CttLwyift7QJFRSUWSZ?usp=sharing",
+          icon: ExternalLink
+        },
+        {
+          label: "GitHub",
+          url: "https://github.com/uKmaz/Bambu-Izotop-GameJam",
+          icon: Github
+        }
+      ],
+      featured: false
     },
     {
       title: "Thiefy Thiefson!",
-      description: "A stealth-action game developed during a Game Jam within only 48 hours. Players experience the thrill of sneaking, strategizing, and making daring escapes. This game is also my first ever game I ever tried and did.",
-      technologies: ["Unity", "C#", "Game Design", "Level Design"],
+      description:
+        "Developed a stealth-action prototype within 48 hours during a Game Jam. Implemented enemy AI behavior, stealth mechanics, and gameplay balancing systems under strict time constraints.",
+      technologies: [
+        "Unity",
+        "C#",
+        "AI Systems",
+        "Game Design"
+      ],
       links: [
-        { 
-          label: "Play Game", 
-          url: "https://ucmazj.itch.io/thiefy-thiefson-jamination-7", 
-          icon: ExternalLink 
+        {
+          label: "Play Game",
+          url: "https://ucmazj.itch.io/thiefy-thiefson-jamination-7",
+          icon: ExternalLink
         }
       ],
-      featured: true
-    },
-    {
-      title: "I Hate You",
-      description: "Developed in 30 hours with a teammate, this Unity project is a rogue-lite local co-op game featuring fun mechanics and random events. Showcases rapid prototyping, teamwork, and creative design under tight time limits.",
-      technologies: ["Unity2D", "C#", "Game Development", "Local Co-op", "Rogue-lite"],
-      links: [
-        { 
-          label: "Download", 
-          url: "https://drive.google.com/drive/folders/1-AbDAYrlNJ6I_CttLwyift7QJFRSUWSZ?usp=sharing", 
-          icon: ExternalLink 
-        },
-        { 
-          label: "GitHub", 
-          url: "https://github.com/uKmaz/Bambu-Izotop-GameJam", 
-          icon: Github 
-        }
-      ],
-      featured: true
+      featured: false
     }
   ];
 
@@ -83,10 +131,10 @@ const ProjectsSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent leading-tight">
             Featured Projects
           </h2>
-          
+
           <div className="grid gap-8">
             {projects.map((project, index) => (
-              <Card 
+              <Card
                 key={project.title}
                 className="bg-card/50 backdrop-blur-sm border-border/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-[var(--hover-glow)] group"
               >
@@ -107,11 +155,11 @@ const ProjectsSection = () => {
                     )}
                   </div>
                 </CardHeader>
-                
+
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech) => (
-                      <span 
+                      <span
                         key={tech}
                         className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full border border-primary/20"
                       >
@@ -119,7 +167,7 @@ const ProjectsSection = () => {
                       </span>
                     ))}
                   </div>
-                  
+
                   {project.links.length > 0 && (
                     <div className="flex flex-wrap gap-4">
                       {project.links.map((link) => (
@@ -130,9 +178,9 @@ const ProjectsSection = () => {
                           className="border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:scale-105"
                           asChild
                         >
-                          <a 
-                            href={link.url} 
-                            target="_blank" 
+                          <a
+                            href={link.url}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2"
                           >
@@ -152,5 +200,4 @@ const ProjectsSection = () => {
     </section>
   );
 };
-
 export default ProjectsSection;

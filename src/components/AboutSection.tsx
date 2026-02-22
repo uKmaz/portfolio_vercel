@@ -10,10 +10,17 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I’m a third-year Computer Engineering student at Dokuz Eylül University.
-                 I enjoy working on game development and mobile apps, focusing on clear system design,
-                  smooth interactions, and mechanics that feel natural. I like trying out new tools and ideas,
-                   and I’m always looking for ways to make projects more fun and useful.
+                I’m a third-year Computer Engineering student and full-stack developer focused on building scalable digital products. 
+                I design and deploy production-ready systems, taking projects from idea to real-world usage.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                As the founder and lead engineer of UniHub, I’ve built and scaled a platform serving 1000+ users across multiple universities. 
+                My interests lie in system architecture, backend engineering, and creating products that solve real coordination and community problems.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I enjoy working where engineering meets product thinking — combining clean architecture, performance optimization, and rapid iteration.
               </p>
             </div>
             
@@ -29,16 +36,16 @@ const AboutSection = () => {
                   <span className="font-medium">Computer Engineering</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Year</span>
-                  <span className="font-medium">Third Year</span>
+                  <span className="text-muted-foreground">Focus</span>
+                  <span className="font-medium">Backend & System Architecture</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Focus</span>
-                  <span className="font-medium">Games & Mobile Apps</span>
+                  <span className="text-muted-foreground">Experience</span>
+                  <span className="font-medium">Full-Stack & Founder</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Philosophy</span>
-                  <span className="font-medium">Always Shipping</span>
+                  <span className="font-medium">Build → Ship → Improve</span>
                 </div>
               </div>
             </div>
