@@ -18,13 +18,12 @@ const HeroSection = () => {
             </h1>
 
             <h2 className="text-2xl md:text-3xl text-accent mb-6 font-semibold">
-              Founder • Full-Stack Engineer • System Builder
+              Software Engineer
             </h2>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              I design and deploy scalable digital products from idea to production. 
-              As the founder and lead engineer of UniHub, I’ve built and scaled a platform serving 1000+ users across multiple universities. 
-              I specialize in backend systems, system architecture, and building products that solve real coordination and community problems.
+              Full-stack engineer with hands-on experience designing and deploying production-ready systems. 
+              I focus on backend development, system architecture, and building scalable applications with clean, maintainable code.
             </p>
 
           </div>
