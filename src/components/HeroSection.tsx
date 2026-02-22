@@ -18,7 +18,7 @@ const HeroSection = () => {
             </h1>
 
             <h2 className="text-2xl md:text-3xl text-accent mb-6 font-semibold">
-              Software Engineer
+              Software Engineer | Full-Stack & Backend Focus
             </h2>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
