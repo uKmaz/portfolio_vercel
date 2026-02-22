@@ -18,12 +18,14 @@ const HeroSection = () => {
             </h1>
 
             <h2 className="text-2xl md:text-3xl text-accent mb-6 font-semibold">
-              Software Engineer | Full-Stack & Backend Focus
+            Software Engineer | Full-Stack & Backend Focus
+
             </h2>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Full-stack engineer with hands-on experience designing and deploying production-ready systems. 
-              I focus on backend development, system architecture, and building scalable applications with clean, maintainable code.
+              Backend-focused software engineer experienced in designing and deploying scalable systems. 
+              I build robust APIs, manage relational databases, and optimize application performance,
+              while comfortably working across the full stack when needed.
             </p>
 
           </div>

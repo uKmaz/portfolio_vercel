@@ -10,17 +10,18 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I’m a third-year Computer Engineering student and full-stack developer focused on building scalable digital products. 
-                I design and deploy production-ready systems, taking projects from idea to real-world usage.
+                I’m a backend-focused software engineer with hands-on experience building and deploying production-ready systems. 
+                I design RESTful APIs, structure relational databases, and optimize application performance with scalability in mind.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                As the founder and lead engineer of UniHub, I’ve built and scaled a platform serving 1000+ users across multiple universities. 
-                My interests lie in system architecture, backend engineering, and creating products that solve real coordination and community problems.
+                I’ve developed and deployed real-world applications used by active communities, taking responsibility for backend architecture, 
+                data modeling, infrastructure configuration, and system reliability.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I enjoy working where engineering meets product thinking — combining clean architecture, performance optimization, and rapid iteration.
+                While my primary focus is backend engineering, I’m comfortable working across the full stack — 
+                from frontend implementation to deployment pipelines — ensuring systems are cohesive from database to UI.
               </p>
             </div>
             
@@ -36,16 +37,20 @@ const AboutSection = () => {
                   <span className="font-medium">Computer Engineering</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Focus</span>
-                  <span className="font-medium">Backend & System Architecture</span>
+                  <span className="text-muted-foreground">Primary Focus</span>
+                  <span className="font-medium">Backend Engineering</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Experience</span>
-                  <span className="font-medium">Full-Stack & Founder</span>
+                  <span className="text-muted-foreground">Secondary Skills</span>
+                  <span className="font-medium">Full-Stack Development</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Core Strength</span>
+                  <span className="font-medium">System Design & Scalability</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Philosophy</span>
-                  <span className="font-medium">Build → Ship → Improve</span>
+                  <span className="font-medium">Build Reliable Systems</span>
                 </div>
               </div>
             </div>
