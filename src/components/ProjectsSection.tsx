@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Shield } from "lucide-react";
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
   const projects = [
     {
       title: "UniHub – A Social Platform for University Communities",
@@ -23,7 +23,22 @@ const ProjectsSection = () => {
           icon: ExternalLink
         }
       ],
-      featured: true
+      featured: true,
+      type: "se"
+    },
+    {
+      title: "EcoBite",
+      description:
+        "Developed backend systems and features for EcoBite. Implemented core business logic, managed database interactions, and ensured system reliability for production environments.",
+      technologies: [
+        "Spring Boot",
+        "Java",
+        "PostgreSQL",
+        "REST API"
+      ],
+      links: [],
+      featured: true,
+      type: "se"
     },
     {
       title: "Homeie – Shared Living Management Platform (In Development)",
@@ -37,7 +52,8 @@ const ProjectsSection = () => {
         "System Architecture"
       ],
       links: [],
-      featured: true
+      featured: true,
+      type: "se"
     },
     {
       title: "TÜBİTAK Research Project",
@@ -57,7 +73,8 @@ const ProjectsSection = () => {
           icon: Github
         }
       ],
-      featured: true
+      featured: true,
+      type: "gd"
     },
     {
       title: "Case #0 – Myself",
@@ -76,7 +93,8 @@ const ProjectsSection = () => {
           icon: ExternalLink
         }
       ],
-      featured: false
+      featured: false,
+      type: "gd"
     },
     {
       title: "I Hate You – Rogue-lite Co-op Game",
@@ -101,7 +119,8 @@ const ProjectsSection = () => {
           icon: Github
         }
       ],
-      featured: false
+      featured: false,
+      type: "gd"
     },
     {
       title: "Thiefy Thiefson!",
@@ -120,9 +139,12 @@ const ProjectsSection = () => {
           icon: ExternalLink
         }
       ],
-      featured: false
+      featured: false,
+      type: "gd"
     }
   ];
+
+  const filteredProjects = filter ? projects.filter(p => p.type === filter) : projects;
 
   return (
     <section id="projects" className="py-20">
@@ -133,7 +155,7 @@ const ProjectsSection = () => {
           </h2>
 
           <div className="grid gap-8">
-            {projects.map((project, index) => (
+            {filteredProjects.map((project, index) => (
               <Card
                 key={project.title}
                 className="bg-card/50 backdrop-blur-sm border-border/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-[var(--hover-glow)] group"

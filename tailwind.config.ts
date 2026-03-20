@@ -95,10 +95,10 @@ export default {
 				},
 				'glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 20px hsl(var(--accent-glow) / 0.3)' 
+						boxShadow: '0 0 20px hsl(var(--accent-glow) / 0.1)' 
 					},
 					'50%': { 
-						boxShadow: '0 0 40px hsl(var(--accent-glow) / 0.6), 0 0 60px hsl(var(--accent-glow) / 0.4)' 
+						boxShadow: '0 0 30px hsl(var(--accent-glow) / 0.2), 0 0 40px hsl(var(--accent-glow) / 0.1)' 
 					},
 				},
 				'gradient-shift': {
@@ -113,9 +113,9 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 6s ease-in-out infinite',
-				'glow': 'glow 4s ease-in-out infinite',
-				'gradient-shift': 'gradient-shift 8s ease-in-out infinite'
+				'float': 'float 20s ease-in-out infinite',
+				'glow': 'glow 20s ease-in-out infinite',
+				'gradient-shift': 'gradient-shift 30s ease-in-out infinite'
 			}
 		}
 	},

@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import SEPortfolio from "./pages/SEPortfolio";
+import GDPortfolio from "./pages/GDPortfolio";
 import NotFound from "./pages/NotFound";
 import Resume from "./pages/Resume";
 import UniHubSupport from "./pages/UniHubSupport"
@@ -19,6 +21,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/se" element={<SEPortfolio />} />
+          <Route path="/gd" element={<GDPortfolio />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/UniHubSupport" element={<UniHubSupport />} />
           <Route path="*" element={<NotFound />} />

@@ -1,14 +1,26 @@
-const SkillsSection = () => {
-  const programmingLanguages = [
-    { name: "Java", level: 100 },
-    { name: "C#", level: 90 },
-    { name: "Javascript", level: 70 },
-    { name: "Python", level: 70 },
-  ];
+const SkillsSection = ({ filter }: { filter?: "se" | "gd" }) => {
+  const isSE = filter === "se";
+  const isGD = filter === "gd";
 
-  const technologies = [
-    "Git", "Unity", "Spring Boot", "React Native", "Render", "Expo"
-  ];
+  const programmingLanguages = isGD 
+    ? [
+        { name: "C#", level: 90 },
+        { name: "Java", level: 70 },
+      ]
+    : [
+        { name: "Java", level: 95 },
+        { name: "C#", level: 85 },
+        { name: "Python", level: 75 },
+        { name: "Javascript / TS", level: 70 },
+      ];
+
+  const technologies = isGD
+    ? ["Unity", "Git", "Firebase", "Mobile", "Render", "Tweening"]
+    : ["Spring Boot", "React / Next.js", "React Native", "SQL (PostgreSQL, MySQL...)", "Git", "Docker / CI/CD"];
+
+  const expertise = isGD
+    ? ["Game Systems Architecture", "Level Design", "Procedural Generation", "Rapid Prototyping", "UI/UX Design", "Problem Solving"]
+    : ["System Architecture", "Full-Stack Development", "RESTful APIs", "Database Design", "Mobile App Development", "Scalability"];
 
   return (
     <section id="skills" className="py-20 bg-muted/30">
@@ -67,11 +79,7 @@ const SkillsSection = () => {
             <div className="bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 p-8 max-w-4xl mx-auto">
               <h3 className="text-xl font-semibold mb-6 text-accent">Areas of Expertise</h3>
               <div className="flex flex-wrap justify-center gap-4">
-                {[
-                  "Game Development", "Mobile App Development", "System Architecture", 
-                  "UI/UX Design", "Problem Solving", "Research & Analysis", 
-                  "Full-Stack Development", "Level Design"
-                ].map((skill) => (
+                {expertise.map((skill) => (
                   <span 
                     key={skill}
                     className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20 transition-all duration-300 hover:bg-primary/20 hover:scale-105"
