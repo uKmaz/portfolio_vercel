@@ -11,6 +11,7 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       technologies: [
         "Spring Boot",
         "React Native",
+        "Expo",
         "PostgreSQL",
         "Firebase Auth",
         "CI/CD",
