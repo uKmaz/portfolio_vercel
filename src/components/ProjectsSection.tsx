@@ -57,15 +57,15 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "se"
     },
     {
-      title: "TÜBİTAK Research Project",
+      title: "TÜBİTAK Research Project – Cognitive Bias Gamification",
       description:
-        "Developed a research-oriented software system integrating psychology and behavioral modeling. Implemented structured data collection and behavioral pattern analysis tools in Unity to support academic research outcomes.",
+        "Developed a research-oriented Serious Game integrating psychology and behavioral modeling for OCD patients. Implemented Gamified Cognitive Bias Modification (GCBM), secure data collection, and behavioral pattern analysis tools in Unity to support clinical academic outcomes.",
       technologies: [
         "Unity",
         "C#",
-        "Firebase",
+        "Firebase (Real-time)",
         "Data Modeling",
-        "Behavior Analysis"
+        "System Architecture"
       ],
       links: [
         {
@@ -78,14 +78,14 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "gd"
     },
     {
-      title: "Case #0 – Myself",
+      title: "Case #0 – Myself – Narrative Mystery",
       description:
-        "Built a 2D pixel-art story-driven game in 48 hours using Unity. Designed scalable level systems, core gameplay mechanics, and a reusable workflow for rapid content creation under strict time constraints.",
+        "Built an event-driven 2D mystery game in a 48-hour Game Jam. Engineered a scalable narrative architecture using C# Actions and a custom Dialogue Manager to handle dynamic story steps, allowing rapid content creation without code duplication.",
       technologies: [
         "Unity",
         "C#",
-        "2D Game Systems",
-        "Game Architecture"
+        "Event-Driven Arch.",
+        "Systems Design"
       ],
       links: [
         {
@@ -98,20 +98,20 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "gd"
     },
     {
-      title: "I Hate You – Rogue-lite Co-op Game",
+      title: "I Hate You – Co-op Endless Survival",
       description:
-        "Co-developed a rogue-lite local co-op game in 30 hours, implementing procedural events, player interaction systems, and scalable gameplay mechanics. Demonstrates rapid prototyping and collaborative system design.",
+        "Co-developed a chaotic local co-op survival game in 55 hours for IZOTOP Game Jam. Engineered a robust Event Manager that triggers procedural catastrophic events, alongside a unified player spawner handling shared lives and dynamic camera behaviors.",
       technologies: [
         "Unity",
         "C#",
         "Game Systems",
-        "Local Co-op",
+        "Event Architecture",
         "Rapid Prototyping"
       ],
       links: [
         {
-          label: "Download",
-          url: "https://drive.google.com/drive/folders/1-AbDAYrlNJ6I_CttLwyift7QJFRSUWSZ?usp=sharing",
+          label: "Play Game",
+          url: "https://fiuby.com/games/i-hate-you",
           icon: ExternalLink
         },
         {
@@ -124,14 +124,14 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "gd"
     },
     {
-      title: "Thiefy Thiefson!",
+      title: "Thiefy Thiefson! – 2D Stealth Action",
       description:
-        "Developed a stealth-action prototype within 48 hours during a Game Jam. Implemented enemy AI behavior, stealth mechanics, and gameplay balancing systems under strict time constraints.",
+        "Developed a fast-paced stealth speedrun game during Jamination 7. Engineered complex core mechanics including threshold-based sound detection (footsteps), rigorous inventory tracking, and dynamic time limits using Singletons.",
       technologies: [
         "Unity",
         "C#",
-        "AI Systems",
-        "Game Design"
+        "Stealth Mechanics",
+        "System Architecture"
       ],
       links: [
         {
