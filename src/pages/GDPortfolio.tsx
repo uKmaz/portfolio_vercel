@@ -11,7 +11,7 @@ const GDPortfolio = () => {
       <AboutSection filter="gd" />
       <SkillsSection filter="gd" />
       <ProjectsSection filter="gd" />
-      <ContactSection />
+      <ContactSection filter="gd" />
     </div>
   );
 };

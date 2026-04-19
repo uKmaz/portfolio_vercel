@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, FileText, Mail } from "lucide-react";
 
-const ContactSection = () => {
+const ContactSection = ({ filter }: { filter?: "se" | "gd" }) => {
+  const isGD = filter === "gd";
+  const resumeUrl = isGD ? "/Emre_Uçmaz_CV_GD.pdf" : "/Emre_Uçmaz_CV_SE.pdf";
+
   const contactLinks = [
     {
       name: "GitHub",
@@ -17,7 +20,7 @@ const ContactSection = () => {
     },
     {
       name: "Resume",
-      url: "/resume",
+      url: resumeUrl,
       icon: FileText,
       description: "Download my full resume"
     }

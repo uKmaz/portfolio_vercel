@@ -11,7 +11,7 @@ const SEPortfolio = () => {
       <AboutSection filter="se" />
       <SkillsSection filter="se" />
       <ProjectsSection filter="se" />
-      <ContactSection />
+      <ContactSection filter="se" />
     </div>
   );
 };
