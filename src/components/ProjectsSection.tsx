@@ -57,6 +57,33 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "se"
     },
     {
+      title: "Don't Blink – Light-Based Survival Action",
+      description:
+        "Game Jam Winner. Built an incremental survival-action game in 48 hours where light is the only weapon — enemies freeze under illumination and pursue in darkness. Engineered a raycast-based beam reflection system with damage scaling per bounce, a static EventBus for fully decoupled system communication, ScriptableObject-driven level and upgrade data, and object pooling for zero runtime allocations across an 8-level roguelite progression with a boss encounter.",
+      technologies: [
+        "Unity 6",
+        "C#",
+        "URP",
+        "NavMesh",
+        "Event-Driven Arch.",
+        "Object Pooling"
+      ],
+      links: [
+        {
+          label: "Play Game",
+          url: "https://fiuby.com/games/dont-blink",
+          icon: ExternalLink
+        },
+        {
+          label: "GitHub",
+          url: "https://github.com/uKmaz/Dont-Panic",
+          icon: Github
+        }
+      ],
+      featured: true,
+      type: "gd"
+    },
+    {
       title: "TÜBİTAK Research Project – Cognitive Bias Gamification",
       description:
         "Developed a research-oriented Serious Game integrating psychology and behavioral modeling for OCD patients. Implemented Gamified Cognitive Bias Modification (GCBM), secure data collection, and behavioral pattern analysis tools in Unity to support clinical academic outcomes.",
