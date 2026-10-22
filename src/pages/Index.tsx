@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Gamepad2, Code2, FileText, Github, Linkedin, Youtube } from "lucide-react";
+import { Gamepad2, Code2, FileText, Github, Linkedin } from "lucide-react";
 
 const Index = () => {
   return (
@@ -51,15 +51,6 @@ const Index = () => {
             >
               <Linkedin className="w-5 h-5" />
             </a>
-
-            <a 
-              href="https://www.youtube.com/@UçmazDev" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 bg-background/50 backdrop-blur-sm rounded-xl border border-border/50 transition-all duration-300 hover:scale-110 hover:bg-card/80 hover:text-primary"
-            >
-              <Youtube className="w-5 h-5" />
-            </a>
           </div>
         </div>
 
@@ -77,7 +68,7 @@ const Index = () => {
               Software Engineering
             </span>
             <span className="text-sm text-muted-foreground mt-2 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 text-center px-6">
-              Backend systems, APIs, and scalable architecture
+              Full-stack products, APIs, and mobile apps
             </span>
           </Link>
 

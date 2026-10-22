@@ -33,15 +33,25 @@ const HeroSection = ({ filter }: { filter?: "se" | "gd" }) => {
             </h1>
 
             <h2 className="text-2xl md:text-3xl text-accent mb-6 font-semibold">
-              {isGD ? "Game Developer | Unity & Systems Architect" : "Software Engineer | Full-Stack & Backend Focus"}
+              {isGD ? "Game Developer | Unity & Systems Architect" : "Full-Stack Software Engineer"}
             </h2>
 
+            {!isGD && (
+              <p className="text-base md:text-lg text-foreground/80 mb-4 font-medium">
+                Java / Spring Boot · Expo Framework · SQL · C# / .NET
+              </p>
+            )}
+
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              {isGD 
+              {isGD
                 ? "Game Developer focused on creating immersive experiences, scalable game systems, and polished mechanics using Unity and C#. Passionate about Game Jams and rapid prototyping."
-                : "Backend-focused software engineer experienced in designing and deploying scalable systems. I build robust APIs, manage relational databases, and optimize application performance."
+                : "Computer Engineering student at Dokuz Eylül University (graduating May 2027) and founder of UniHub, a campus platform with 1,000+ users on iOS and Android. I build full-stack products end to end, from Spring Boot backends to Expo mobile apps, and work with an AI-driven SDLC."
               }
             </p>
+
+            {!isGD && (
+              <p className="text-sm text-muted-foreground mt-4">İzmir, Türkiye</p>
+            )}
 
           </div>
           
