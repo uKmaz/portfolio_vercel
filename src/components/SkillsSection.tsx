@@ -1,15 +1,17 @@
 const SkillsSection = ({ filter }: { filter?: "se" | "gd" }) => {
   const isGD = filter === "gd";
 
-  // GD view keeps its level bars; SE view lists languages in priority order without percentages.
-  const gdLanguages = [
-    { name: "C#", level: 90 },
-    { name: "Java", level: 70 },
-  ];
+  // Languages are listed in priority order, without percentage bars.
+  const gdLanguages = ["C#", "C++", "Java", "TypeScript", "SQL", "Python"];
 
   const seLanguages = ["C#", "Java", "C++", "TypeScript", "JavaScript", "SQL", "Python"];
 
-  const gdTechnologies = ["Unity", "Git", "Firebase", "Mobile", "Render", "Tweening"];
+  const gdTechnologies = [
+    { group: "Game Development", items: ["Unity 6", "Unity 2022", "URP", "NavMesh", "ScriptableObjects", "Tweening"] },
+    { group: "Architecture", items: ["Event-Driven Systems", "Object Pooling", "ECS", "Procedural Generation"] },
+    { group: "Engine & Graphics", items: ["C++20", "OpenGL 3.3", "CMake", "Catch2"] },
+    { group: "Backend & Tools", items: ["Firebase", "Spring Boot", "PostgreSQL", "Git", "Claude Code", "MCP"] }
+  ];
 
   const seTechnologies = [
     { group: "Backend", items: ["Spring Boot", "Spring Security", "JPA/Hibernate", "REST", "OpenAPI", "Node.js", "Firebase Auth"] },
@@ -39,26 +41,8 @@ const SkillsSection = ({ filter }: { filter?: "se" | "gd" }) => {
                 <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
                 Programming Languages
               </h3>
-              {isGD ? (
-                <div className="space-y-6">
-                  {gdLanguages.map((lang) => (
-                    <div key={lang.name} className="group">
-                      <div className="flex justify-between mb-2">
-                        <span className="font-medium">{lang.name}</span>
-                        <span className="text-sm text-muted-foreground">{lang.level}%</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-                        <div
-                          className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-1000 group-hover:animate-pulse"
-                          style={{ width: `${lang.level}%` }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div className="grid grid-cols-2 gap-4">
-                  {seLanguages.map((lang) => (
+              <div className="grid grid-cols-2 gap-4">
+                  {(isGD ? gdLanguages : seLanguages).map((lang) => (
                     <div
                       key={lang}
                       className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl p-4 text-center border border-border/30 transition-all duration-300 hover:scale-105 hover:bg-gradient-to-br hover:from-primary/20 hover:to-accent/20 hover:shadow-lg"
@@ -67,7 +51,6 @@ const SkillsSection = ({ filter }: { filter?: "se" | "gd" }) => {
                     </div>
                   ))}
                 </div>
-              )}
             </div>
 
             {/* Technologies & Tools */}
@@ -76,20 +59,8 @@ const SkillsSection = ({ filter }: { filter?: "se" | "gd" }) => {
                 <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
                 Technologies & Tools
               </h3>
-              {isGD ? (
-                <div className="grid grid-cols-2 gap-4">
-                  {gdTechnologies.map((tech) => (
-                    <div
-                      key={tech}
-                      className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl p-4 text-center border border-border/30 transition-all duration-300 hover:scale-105 hover:bg-gradient-to-br hover:from-primary/20 hover:to-accent/20 hover:shadow-lg"
-                    >
-                      <span className="font-medium">{tech}</span>
-                    </div>
-                  ))}
-                </div>
-              ) : (
                 <div className="space-y-5">
-                  {seTechnologies.map(({ group, items }) => (
+                  {(isGD ? gdTechnologies : seTechnologies).map(({ group, items }) => (
                     <div key={group}>
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">{group}</h4>
                       <div className="flex flex-wrap gap-2">
@@ -105,7 +76,6 @@ const SkillsSection = ({ filter }: { filter?: "se" | "gd" }) => {
                     </div>
                   ))}
                 </div>
-              )}
             </div>
           </div>
 

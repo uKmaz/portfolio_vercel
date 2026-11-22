@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
-type ProjectStatus = "Live" | "Active" | "In Development · On hold" | "Closed";
+type ProjectStatus = "Live" | "Active" | "Closed";
 
 type Project = {
   title: string;
@@ -20,19 +20,35 @@ type Project = {
 const statusStyles: Record<ProjectStatus, string> = {
   "Live": "bg-accent/20 text-accent border-accent/30",
   "Active": "bg-primary/20 text-primary border-primary/30",
-  "In Development · On hold": "bg-muted text-muted-foreground border-border/50",
   "Closed": "bg-muted text-muted-foreground border-border/50"
 };
 
 const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
+  const reachEngine = {
+    title: "Reach Engine, Degree Thesis",
+    role: "Co-Developer (team of 2)",
+    dates: "Sep 2026 - Present",
+    status: "Active" as ProjectStatus,
+    description:
+      "C++20 2D game engine built for thousands of simultaneous entities. In active development through graduation, with a potential open-source release.",
+    highlights: [
+      "Data-oriented ECS with archetype and sparse-set backends benchmarked against each other.",
+      "In-process MCP server so AI agents can inspect live game state.",
+      "OpenGL 3.3, CMake, Catch2, CI checks."
+    ],
+    technologies: ["C++20", "ECS", "OpenGL", "CMake"],
+    links: [],
+    featured: true
+  };
+
   const projects: Project[] = [
     {
       title: "UniHub",
       role: "Founder & Lead Full-Stack Engineer",
-      dates: "Jun 2025 – Present",
+      dates: "Jun 2025 - Present",
       status: "Live",
       description:
-        "Social platform for verified university students: club discovery, event registration, QR tickets and an auto-generated activity portfolio. 1,000+ users across 50+ communities and 5+ universities. Built solo; now planning a business expansion and recruiting a co-founder and a marketing manager.",
+        "Social platform for verified university students: club discovery, event registration, QR tickets and an auto-generated activity portfolio. 1,000+ users across 50+ communities and 5+ universities. Built solo; now building the team for a business expansion.",
       highlights: [
         "Backend: Java 21 + Spring Boot 3.5 REST API for mobile, web and partner sites; Spring Security with Firebase JWT and partner API-key filters; 26 JPA entities on PostgreSQL; OpenAPI docs; 230 automated tests.",
         "Mobile: React Native + Expo SDK 54 (v2.0) with .edu.tr verification, QR ticketing and scanner, push notifications, TR/EN, dark mode.",
@@ -50,33 +66,15 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "se"
     },
     {
-      title: "Nissth",
-      role: "Creator",
-      dates: "Sep 2026 – Present",
-      status: "Active",
-      description:
-        "File-based framework that makes AI coding agents (Claude Code) operate deterministically instead of re-exploring a codebase every session.",
-      highlights: [
-        "Persistent state in an append-only status ledger with a plan → execute → verify → report loop.",
-        "Diagnostic Bridge bindings for Spring Boot, Expo and PostgreSQL, plus five Node.js repo checks.",
-        "Verified suites of 104 Spring Boot, 80 Expo and 107 PostgreSQL tests.",
-        "Runs the development of my current projects."
-      ],
-      technologies: ["AI agents", "Claude Code", "MCP", "Node.js", "TypeScript", "Java"],
-      links: [{ label: "GitHub", url: "https://github.com/uKmaz/Nissth", icon: Github }],
-      featured: true,
-      type: "se"
-    },
-    {
-      title: "Butik – E-commerce Template",
-      dates: "Aug 2026 – Present",
+      title: "Butik, E-commerce Template",
+      dates: "Aug 2026 - Present",
       status: "Live",
       description:
-        "Reusable single-shop e-commerce platform for Turkish retailers: one codebase, one deploy per shop. Currently running for a clothing boutique.",
+        "Reusable single-shop e-commerce platform for Turkish retailers: one codebase, one deploy per shop. Live for the clothing boutique MienaButik. Built with Nissth.",
       highlights: [
         "Next.js 15 on Cloudflare Workers with Supabase/PostgreSQL.",
         "PayTR checkout with refunds and stock held during payment.",
-        "Admin with colour × size variants and till (.xlsx) stock sync.",
+        "Admin with colour and size variants and stock sync from the shop's till export (.xlsx).",
         "JSON-LD, Google Merchant feed and llms.txt generated from config.",
         "CLI to set up a new shop, plus a go-live preflight."
       ],
@@ -86,65 +84,35 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "se"
     },
     {
-      title: "Barber SaaS – Appointment Platform",
-      dates: "Jul 2026 – Present",
-      status: "In Development · On hold",
-      description: "Multi-tenant booking SaaS for barbershops.",
-      highlights: [
-        "Owner and staff roles.",
-        "One-time onboarding codes that set up a whole shop.",
-        "Standard/Pro plans, commission settings, audit log and web-push reminders."
-      ],
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "NextAuth"],
-      links: [],
-      featured: false,
-      type: "se"
-    },
-    {
-      title: "PostPilot – Desktop Planner",
-      dates: "Sep 2026",
+      title: "Nissth",
+      role: "Creator",
+      dates: "Sep 2026 - Present",
       status: "Active",
       description:
-        "Offline-first Windows widget for planning social-media posts across several game projects.",
+        "Open-source, file-based framework that makes AI coding agents (Claude Code) operate deterministically instead of re-exploring a codebase every session. I use it in all my software projects.",
       highlights: [
-        "C# / .NET 10, WPF, MVVM, SQLite.",
-        "Four versions shipped (v2.1.2).",
-        "442 automated tests and UI Automation drills."
+        "Persistent state in an append-only status ledger with a plan, execute, verify and report loop.",
+        "Diagnostic Bridge bindings for Spring Boot, Expo and PostgreSQL, plus five Node.js repo checks.",
+        "Verified suites of 104 Spring Boot, 80 Expo and 107 PostgreSQL tests.",
+        "Products shipped quickly with it: Butik; PostPilot, an offline-first .NET 10 / WPF desktop planner with 442 automated tests; and a local-first iOS finance app (Expo SDK 57, SQLite, Drizzle)."
       ],
-      technologies: ["C#", ".NET", "WPF", "SQLite"],
-      links: [],
-      featured: false,
+      technologies: ["AI agents", "Claude Code", "MCP", "Node.js", "TypeScript", "Java"],
+      links: [{ label: "GitHub", url: "https://github.com/uKmaz/Nissth", icon: Github }],
+      featured: true,
       type: "se"
     },
-    {
-      title: "Reach Engine – Degree Thesis",
-      role: "Co-Developer (team of 2)",
-      dates: "Sep 2026 – Present",
-      status: "Active",
-      description:
-        "C++20 2D game engine built for thousands of simultaneous entities. To be open-sourced under MIT in mid-2027.",
-      highlights: [
-        "Data-oriented ECS with archetype and sparse-set backends benchmarked against each other.",
-        "In-process MCP server so AI agents can inspect game state.",
-        "OpenGL 3.3, CMake, Catch2."
-      ],
-      technologies: ["C++20", "ECS", "OpenGL", "CMake"],
-      links: [],
-      featured: false,
-      type: "se"
-    },
+    { ...reachEngine, featured: false, type: "se" },
     {
       title: "Süprüz (formerly EcoBite)",
       role: "Co-Founder & Full-Stack Engineer (team of 5)",
-      dates: "Nov 2025 – Jun 2026",
+      dates: "Nov 2025 - Jun 2026",
       status: "Closed",
       description:
-        "Location-based food-rescue marketplace connecting consumers with local businesses to cut surplus food waste.",
+        "Startup attempt: a location-based food-rescue marketplace connecting consumers with local businesses to cut surplus food waste.",
       highlights: [
-        "Finalist in the YGY entrepreneurship competition at Galatasaray University, out of 150+ teams.",
-        "Designed a Dockerized modular-monolith backend (Spring Boot) and a 1 km proximity reservation engine on PostgreSQL + PostGIS, with pessimistic locking for reservation spikes.",
-        "Built the pre-launch waitlist site (Next.js 16, TypeScript, Tailwind v4).",
-        "Wound down in June 2026 as the team moved on to their own careers."
+        "Wrote the business plan, completed entrepreneurship training and reached the finals of the YGY entrepreneurship competition at Galatasaray University, out of 150+ teams.",
+        "Built the product prototype: a Dockerized modular-monolith Spring Boot backend and a 1 km proximity reservation engine on PostgreSQL + PostGIS, with pessimistic locking for reservation spikes, plus a Next.js 16 waitlist site.",
+        "Validated demand before scaling; when it did not materialise, the team decided to shut the venture down."
       ],
       technologies: ["Spring Boot", "PostgreSQL", "PostGIS", "Docker", "Next.js"],
       links: [],
@@ -152,21 +120,9 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "se"
     },
     {
-      title: "Homeie",
-      role: "Founder & Lead Full-Stack Engineer",
-      dates: "Nov 2025 – Present",
-      status: "In Development · On hold",
-      description:
-        "Home-management app for shared living: chore tracking, shared expenses and automatic cost balancing.",
-      technologies: ["Spring Boot", "Firebase", "PostgreSQL", "Expo"],
-      links: [],
-      featured: false,
-      type: "se"
-    },
-    {
-      title: "TÜBİTAK",
+      title: "TÜBİTAK Research Project",
       role: "Research Software Developer",
-      dates: "Mar 2025 – Mar 2026",
+      dates: "Mar 2025 - Mar 2026",
       status: "Closed",
       description:
         "Gamified cognitive-bias-modification app for individuals with OCD, built with Dr. Sıla Derin for a TÜBİTAK-supported clinical psychology study. Unity 2022 + Firebase. Earned eligibility for a TÜBİTAK scholarship.",
@@ -176,120 +132,69 @@ const ProjectsSection = ({ filter }: { filter?: "se" | "gd" }) => {
       type: "se"
     },
     {
-      title: "Don't Blink – Light-Based Survival Action",
+      title: "Don't Blink, Light-Based Survival Action",
+      role: "Winner, AniGame Jam '26 (48 hours)",
+      dates: "Apr 2026",
       description:
-        "Game Jam Winner. Built an incremental survival-action game in 48 hours where light is the only weapon — enemies freeze under illumination and pursue in darkness. Engineered a raycast-based beam reflection system with damage scaling per bounce, a static EventBus for fully decoupled system communication, ScriptableObject-driven level and upgrade data, and object pooling for zero runtime allocations across an 8-level roguelite progression with a boss encounter.",
-      technologies: [
-        "Unity 6",
-        "C#",
-        "URP",
-        "NavMesh",
-        "Event-Driven Arch.",
-        "Object Pooling"
-      ],
+        "Built a survival-action roguelite in 48 hours where light is the only weapon: enemies freeze under illumination and pursue in darkness. Engineered a raycast-based beam reflection system with damage scaling per bounce, a static EventBus for fully decoupled system communication, ScriptableObject-driven level and upgrade data, and object pooling for zero runtime allocations across an 8-level progression with a boss encounter.",
+      technologies: ["Unity 6", "C#", "URP", "NavMesh", "Event-Driven Arch.", "Object Pooling"],
       links: [
-        {
-          label: "Play Game",
-          url: "https://fiuby.com/games/dont-blink",
-          icon: ExternalLink
-        },
-        {
-          label: "GitHub",
-          url: "https://github.com/uKmaz/Dont-Panic",
-          icon: Github
-        }
+        { label: "Play Game", url: "https://fiuby.com/games/dont-blink", icon: ExternalLink },
+        { label: "GitHub", url: "https://github.com/uKmaz/Dont-Panic", icon: Github }
       ],
       featured: true,
       type: "gd"
     },
+    { ...reachEngine, type: "gd" },
     {
-      title: "TÜBİTAK Research Project – Cognitive Bias Gamification",
+      title: "TÜBİTAK Research Project, Cognitive Bias Gamification",
+      role: "Solo Game Developer & Designer",
+      dates: "Mar 2025 - Mar 2026",
       description:
-        "Developed a research-oriented Serious Game integrating psychology and behavioral modeling for OCD patients. Implemented Gamified Cognitive Bias Modification (GCBM), secure data collection, and behavioral pattern analysis tools in Unity to support clinical academic outcomes.",
-      technologies: [
-        "Unity",
-        "C#",
-        "Firebase (Real-time)",
-        "Data Modeling",
-        "System Architecture"
-      ],
-      links: [
-        {
-          label: "GitHub",
-          url: "https://github.com/uKmaz/TUBITAK-Psychology",
-          icon: Github
-        }
-      ],
+        "Developed a research-oriented serious game integrating psychology and behavioural modelling for individuals with OCD, built with Dr. Sıla Derin for a TÜBİTAK-supported study. Implemented gamified cognitive bias modification, anonymous real-time data collection and behavioural pattern analysis tools in Unity. Earned eligibility for a TÜBİTAK scholarship.",
+      technologies: ["Unity", "C#", "Firebase (Real-time)", "Data Modeling", "System Architecture"],
+      links: [{ label: "GitHub", url: "https://github.com/uKmaz/TUBITAK-Psychology", icon: Github }],
       featured: true,
       type: "gd"
     },
     {
-      title: "Case #0 – Myself – Narrative Mystery",
+      title: "I Hate You, Co-op Endless Survival",
+      role: "Lead Developer, IZOTOP Game Jam (team of 2)",
+      dates: "Oct 2025",
       description:
-        "Built an event-driven 2D mystery game in a 48-hour Game Jam. Engineered a scalable narrative architecture using C# Actions and a custom Dialogue Manager to handle dynamic story steps, allowing rapid content creation without code duplication.",
-      technologies: [
-        "Unity",
-        "C#",
-        "Event-Driven Arch.",
-        "Systems Design"
-      ],
+        "Co-developed a chaotic local co-op survival game in 30 hours after joining the 48-hour IZOTOP Game Jam late. Engineered an event manager that triggers procedural catastrophic events, alongside a unified player spawner handling shared lives and dynamic camera behaviour.",
+      technologies: ["Unity 6", "C#", "Game Systems", "Event Architecture", "Rapid Prototyping"],
       links: [
-        {
-          label: "Play Game",
-          url: "https://www.fiuby.com/games/case-0-myself",
-          icon: ExternalLink
-        }
+        { label: "Play Game", url: "https://fiuby.com/games/i-hate-you", icon: ExternalLink },
+        { label: "GitHub", url: "https://github.com/uKmaz/IHateYout-IzotopJam", icon: Github }
       ],
       featured: false,
       type: "gd"
     },
     {
-      title: "I Hate You – Co-op Endless Survival",
+      title: "Case #0: Myself, Narrative Mystery",
+      role: "Lead Developer, Sandwich Jam II (team of 2)",
+      dates: "Dec 2025",
       description:
-        "Co-developed a chaotic local co-op survival game in 55 hours for IZOTOP Game Jam. Engineered a robust Event Manager that triggers procedural catastrophic events, alongside a unified player spawner handling shared lives and dynamic camera behaviors.",
-      technologies: [
-        "Unity",
-        "C#",
-        "Game Systems",
-        "Event Architecture",
-        "Rapid Prototyping"
-      ],
-      links: [
-        {
-          label: "Play Game",
-          url: "https://fiuby.com/games/i-hate-you",
-          icon: ExternalLink
-        },
-        {
-          label: "GitHub",
-          url: "https://github.com/uKmaz/IHateYout-IzotopJam",
-          icon: Github
-        }
-      ],
+        "Built an event-driven 2D mystery game in 48 hours. Engineered a scalable narrative architecture using C# Actions and a custom dialogue manager to handle dynamic story steps, allowing rapid content creation without code duplication.",
+      technologies: ["Unity 6", "C#", "Event-Driven Arch.", "Systems Design"],
+      links: [{ label: "Play Game", url: "https://www.fiuby.com/games/case-0-myself", icon: ExternalLink }],
       featured: false,
       type: "gd"
     },
     {
-      title: "Thiefy Thiefson! – 2D Stealth Action",
+      title: "Thiefy Thiefson!, 2D Stealth Action",
+      role: "Lead Developer, Jamination 7 (team of 2)",
+      dates: "May 2024",
       description:
-        "Developed a fast-paced stealth speedrun game during Jamination 7. Engineered complex core mechanics including threshold-based sound detection (footsteps), rigorous inventory tracking, and dynamic time limits using Singletons.",
-      technologies: [
-        "Unity",
-        "C#",
-        "Stealth Mechanics",
-        "System Architecture"
-      ],
-      links: [
-        {
-          label: "Play Game",
-          url: "https://ucmazj.itch.io/thiefy-thiefson-jamination-7",
-          icon: ExternalLink
-        }
-      ],
+        "Developed a fast-paced pixel-art stealth speedrun game in 48 hours. Engineered core mechanics including threshold-based footstep sound detection, enemy AI, inventory tracking and dynamic time limits.",
+      technologies: ["Unity 2022", "C#", "Stealth Mechanics", "System Architecture"],
+      links: [{ label: "Play Game", url: "https://ucmazj.itch.io/thiefy-thiefson-jamination-7", icon: ExternalLink }],
       featured: false,
       type: "gd"
     }
   ];
+
 
   const filteredProjects = filter ? projects.filter(p => p.type === filter) : projects;
 

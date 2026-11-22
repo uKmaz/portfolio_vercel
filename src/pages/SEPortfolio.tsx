@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
@@ -5,6 +6,10 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 
 const SEPortfolio = () => {
+  useEffect(() => {
+    document.title = "Emre Uçmaz | Full-Stack Software Engineer";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <HeroSection filter="se" />
