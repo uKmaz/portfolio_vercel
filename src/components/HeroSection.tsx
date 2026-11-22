@@ -36,22 +36,18 @@ const HeroSection = ({ filter }: { filter?: "se" | "gd" }) => {
               {isGD ? "Game Developer | Unity & Systems Architect" : "Full-Stack Software Engineer"}
             </h2>
 
-            {!isGD && (
-              <p className="text-base md:text-lg text-foreground/80 mb-4 font-medium">
-                Java / Spring Boot · Expo Framework · SQL · C# / .NET
-              </p>
-            )}
+            <p className="text-base md:text-lg text-foreground/80 mb-4 font-medium">
+              {isGD ? "Unity · C# · C++ · Game Systems" : "Java / Spring Boot · Expo Framework · SQL · C# / .NET"}
+            </p>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               {isGD
-                ? "Game Developer focused on creating immersive experiences, scalable game systems, and polished mechanics using Unity and C#. Passionate about Game Jams and rapid prototyping."
-                : "Computer Engineering student at Dokuz Eylül University (graduating May 2027) and founder of UniHub, a campus platform with 1,000+ users on iOS and Android. I build full-stack products end to end, from Spring Boot backends to Expo mobile apps, and work with an AI-driven SDLC."
+                ? "Game developer focused on scalable game systems and polished mechanics in Unity and C#. Game jam winner, co-developer of a C++20 ECS engine for my degree thesis, and former chairman of a 1,000+ member game development community."
+                : "Computer Engineering student at Dokuz Eylül University (graduating June 2027) and founder of UniHub, a campus platform with 1,000+ users on iOS and Android. I build full-stack products end to end, from Spring Boot backends to Expo mobile apps, and work with an AI-driven SDLC."
               }
             </p>
 
-            {!isGD && (
-              <p className="text-sm text-muted-foreground mt-4">İzmir, Türkiye</p>
-            )}
+            <p className="text-sm text-muted-foreground mt-4">İzmir, Türkiye</p>
 
           </div>
           

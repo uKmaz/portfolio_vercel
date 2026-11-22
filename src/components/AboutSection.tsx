@@ -3,12 +3,12 @@ const AboutSection = ({ filter }: { filter?: "se" | "gd" }) => {
 
   const paragraphs = isGD
     ? [
-        "I’m a Game Developer and Systems Architect with hands-on experience building complex, scalable game systems. I thrive in rapid prototyping environments and Game Jams, often developing core mechanics, procedural generation, and AI behaviors.",
-        "I’ve developed multiple game prototypes in tight timeframes and actively integrated real-world behavioral analysis into interactive Unity applications.",
-        "Whether it's 2D pixel-art games or complex 3D rogue-lite co-op systems, I love solving architectural challenges that make games fun, reliable, and engaging."
+        "I'm a game developer and Computer Engineering student at Dokuz Eylül University (graduating June 2027). I build game systems in Unity and C#: core mechanics, enemy AI, event-driven architecture and procedural events.",
+        "I won AniGame Jam '26 with Don't Blink and have shipped several games in 30 to 48 hour jams. For my degree thesis I'm co-developing Reach Engine, a C++20 ECS engine built for thousands of entities.",
+        "I also led DEU POG, a 1,000+ member game development community, where I organized Jamination 8 and Pogathon."
       ]
     : [
-        "I’m a Computer Engineering student at Dokuz Eylül University (graduating May 2027) and the founder of UniHub, a campus platform with 1,000+ users on iOS and Android.",
+        "I'm a Computer Engineering student at Dokuz Eylül University (graduating June 2027) and the founder of UniHub, a campus platform with 1,000+ users on iOS and Android.",
         "I build full-stack products end to end, from Spring Boot backends and PostgreSQL schemas to Expo mobile apps, React web clients and the infrastructure they deploy to.",
         "I work with an AI-driven SDLC: Nissth, my framework for running AI coding agents deterministically, drives the development of my current projects."
       ];
@@ -16,15 +16,15 @@ const AboutSection = ({ filter }: { filter?: "se" | "gd" }) => {
   const quickFacts = isGD
     ? [
         { label: "University", value: "Dokuz Eylül University" },
-        { label: "Major", value: "Computer Engineering" },
+        { label: "Major", value: "Computer Engineering (expected June 2027)" },
         { label: "Primary Focus", value: "Game Systems & Architecture" },
-        { label: "Secondary Skills", value: "Level Design & Mechanics" },
+        { label: "Engines", value: "Unity 6, custom C++20 ECS" },
         { label: "Core Strength", value: "Rapid Prototyping" },
-        { label: "Philosophy", value: "Iterative & Fun Gameplay" }
+        { label: "Highlight", value: "AniGame Jam '26 Winner" }
       ]
     : [
         { label: "University", value: "Dokuz Eylül University" },
-        { label: "Major", value: "Computer Engineering (expected May 2027)" },
+        { label: "Major", value: "Computer Engineering (expected June 2027)" },
         { label: "Primary Focus", value: "Full-Stack Development" },
         { label: "Core Strength", value: "System Design & Shipping Products" },
         { label: "Way of Working", value: "AI-driven SDLC" }
@@ -36,12 +36,12 @@ const AboutSection = ({ filter }: { filter?: "se" | "gd" }) => {
       items: [
         {
           title: "Dokuz Eylül University",
-          detail: "B.Sc. Computer Engineering · Oct 2023 – May 2027 (expected)",
+          detail: "B.Sc. Computer Engineering · Oct 2023 - Jun 2027 (expected)",
           note: "Degree thesis: Reach Engine"
         },
         {
           title: "University American College Skopje",
-          detail: "Erasmus+ exchange, Computer Science · Sep 2024 – Feb 2025"
+          detail: "Erasmus+ exchange, Computer Science · Sep 2024 - Feb 2025"
         }
       ]
     },
@@ -50,13 +50,16 @@ const AboutSection = ({ filter }: { filter?: "se" | "gd" }) => {
       items: [
         {
           title: "Chairman, DEU POG",
-          detail: "Project and Game Development Community · May 2025 – Jul 2026",
+          detail: "Project and Game Development Community · May 2025 - Jul 2026",
           url: "https://www.deupog.com"
         },
         {
           title: "Chairman, Fiuby Gaming Club",
-          detail: "Dec 2025 – Dec 2026"
-        }
+          detail: "Dec 2025 - Dec 2026"
+        },
+        ...(isGD
+          ? [{ title: "UçmazDev (YouTube)", detail: "Devlogs and tutorials on Unity and C# · Mar 2025 - Present" }]
+          : [])
       ]
     }
   ];
@@ -91,7 +94,7 @@ const AboutSection = ({ filter }: { filter?: "se" | "gd" }) => {
             </div>
           </div>
 
-          {!isGD && (
+          {(
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               {background.map((group) => (
                 <div key={group.heading} className="bg-card/50 backdrop-blur-sm rounded-2xl border border-border/50 p-8">
